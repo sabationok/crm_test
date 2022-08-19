@@ -1,0 +1,17 @@
+.header {
+  padding: 0 8px;
+  background-color: var(--brand_clr__2);
+  box-shadow: var(--header-shadow);
+  &.--position {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  &.--flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+}
