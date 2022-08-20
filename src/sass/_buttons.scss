@@ -26,15 +26,10 @@
 
     border-bottom: 4px solid transparent;
 
-    transition: var(--timing-function__main);
-    &:hover,
-    &:focus {
-      background-color: var(--btn-decsn_clr__hover);
-      outline-style: none;
-    }
-    &:active {
-      background-color: var(--btn-decsn_clr__active);
-    }
+    transition: all var(--timing-function__main);
+    // &:hover,
+    // &:focus {}
+    // &:active {}
     &.--accept {
       &:hover,
       &:focus {

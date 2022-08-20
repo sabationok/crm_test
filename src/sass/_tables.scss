@@ -5,6 +5,9 @@
   }
   &__subtittle {
     text-align: center;
+    font-size: 14px;
+    line-height: 1.3;
+    
     color: var(--text-clr__primary);
   }
   &.--sizes {
@@ -12,6 +15,11 @@
     // & .thead {}
     // & .tbody {}
     // & .row {}
+    & .col {
+      border: 1px solid var(--table-row-brdr-clr__primary);
+    }
+  }
+  &.--stock {
     & .col {
       border: 1px solid var(--table-row-brdr-clr__primary);
     }

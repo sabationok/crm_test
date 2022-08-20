@@ -6,7 +6,7 @@
     z-index: 1;
 
     padding: 14px 8px 8px;
-    margin: 10px auto 0;
+    margin: 16px auto 0;
     width: calc(100% - 16px);
 
     background-color: #fff;
@@ -21,8 +21,12 @@
       left: 10px;
       z-index: 1;
 
+      font-size: 14px;
+      line-height: 1.2;
+
+      padding: 2px;
       background-color: #fff;
-      transform: translateY(-50%);
+      transform: translateY(-60%);
       transition: color var(--timing-function__main);
     }
     &:focus-visible,
