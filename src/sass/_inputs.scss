@@ -1,3 +1,17 @@
+.input {
+  &.--filter-founder {
+height: 30px;
+    width: 150px;
+    border: 2px solid transparent;
+
+    transition: all var(--timing-function__main);
+    &:hover,
+    &:focus-visible {
+      outline-style: none;
+      border-color: var(--brand_clr__1);
+    }
+  }
+}
 .--prod-create {
   & .input__box {
     width: 100%;
@@ -223,5 +237,6 @@
     }
   }
 }
+
 
 
