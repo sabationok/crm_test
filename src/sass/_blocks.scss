@@ -94,8 +94,10 @@
   & .content {
     display: flex;
     flex-direction: column;
-
+//     flex-basis: 350px;
+// flex-basis: 5;
     height: calc(100% - 31px);
+    // height: fit-content;
   }
   & .footer {
     display: block;
