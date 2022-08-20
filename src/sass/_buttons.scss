@@ -3,20 +3,55 @@
   border-style: none;
   transition: var(--timing-function__main);
   &.--for_menu {
-
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.05em;
     color: var(--brand_clr__1);
-    
+
     padding: 8px 16px;
     background-color: var(--brand_clr__2);
-    
+
     &:hover,
     &:focus,
     &:active {
       background-color: var(--brand_clr__2-hover);
+    }
+  }
+  &.--decision {
+    padding: 8px 16px 6px;
+    min-width: 100px;
+    text-align: center;
+    font-weight: 500;
+
+    border-bottom: 4px solid transparent;
+
+    transition: var(--timing-function__main);
+    &:hover,
+    &:focus {
+      background-color: var(--btn-decsn_clr__hover);
+      outline-style: none;
+    }
+    &:active {
+      background-color: var(--btn-decsn_clr__active);
+    }
+    &.--accept {
+      &:hover,
+      &:focus {
+        border-color: rgb(84, 255, 62);
+      }
+    }
+    &.--reset {
+      &:hover,
+      &:focus {
+        border-color: rgb(255, 242, 62);
+      }
+    }
+    &.--decline {
+      &:hover,
+      &:focus {
+        border-color: rgb(255, 62, 62);
+      }
     }
   }
 }

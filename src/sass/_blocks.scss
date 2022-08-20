@@ -10,7 +10,6 @@
   max-height: 400px;
   min-width: 400px;
 
-  background-color: var(--background_clr__main);
   box-shadow: var(--block-shadow);
 
   &.--prod-list {
@@ -35,6 +34,7 @@
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 5;
 
     height: 30px;
     width: 100%;
@@ -52,6 +52,7 @@
     position: sticky;
     top: 100%;
     left: 0;
+    z-index: 5;
 
     height: 5px;
     width: 100%;
@@ -62,6 +63,7 @@
   & .overflow {
     overflow: auto;
     width: 100%;
+    // width: 400px;
     height: 100%;
   }
 }

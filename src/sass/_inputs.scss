@@ -1,6 +1,5 @@
 .--prod-create {
-  .input__box {
-    padding: 8px 8px 0;
+  & .input__box {
     width: 100%;
     &:hover,
     &:focus,
@@ -45,16 +44,113 @@
   & .textarea {
     display: block;
     width: 100%;
-    height: 100px;
 
     padding: 8px;
     margin-top: 4px;
-    margin-bottom: 8px;
     resize: none;
 
     border-radius: 4px;
     border: 1px solid var(--icon-clr__primary);
 
     transition: all var(--timing-function__main);
+
+    &.--desription {
+      height: 85px;
+    }
+    &.--ext-comment {
+      height: 50px;
+    }
+    &.--int-comment {
+      height: 50px;
+    }
+  }
+  & .input-foto {
+    &__box {
+      position: relative;
+      text-align: center;
+      // margin: 15px 0;
+      // width: 100%;
+
+      /*padding: 8px;*/
+      /*width: 100%;*/
+      &:hover,
+      &:focus,
+      &:focus-visible,
+      &:focus-within {
+        & .input-foto__label {
+          border-color: var(--brand_clr__1);
+        }
+        & .input-foto__add {
+          fill: var(--brand_clr__1);
+          border-color: var(--brand_clr__1);
+        }
+
+      }
+    }
+    &__label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      min-width: 70px;
+
+      min-height: 70px;
+
+      cursor: pointer;
+
+      border-radius: 4px;
+      border: 2px solid var(--icon-clr__primary);
+      background-color: #fff;
+
+      transition: all var(--timing-function__main);
+    }
+    &__add {
+      display: inline-block;
+      color: inherit;
+      vertical-align: middle;
+
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 0;
+      padding: 4px;
+
+      fill: var(--icon-clr__primary);
+
+      border-radius: 50%;
+      border: 2px solid var(--icon-clr__primary);
+
+      transition: all var(--timing-function__main);
+    }
+    &__delete {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+    }
+    &__image {
+      width: 100%;
+    }
+  }
+  & .input {
+    &__table-type, 
+    &__table-atribute {
+      display: block;
+      border-style: none;
+
+      border: 2px solid transparent;
+      &:hover,
+      &:focus,
+      &:focus-visible,
+      &:focus-within {
+        border-color: var(--brand_clr__1);
+        outline-style: none;
+      }
+    }
+    &__table-type {
+      width: 60px;
+    }
+    &__table-atribute {
+      width: 100px;
+    }
   }
 }

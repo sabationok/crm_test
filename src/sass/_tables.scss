@@ -1,0 +1,19 @@
+.table {
+  &__tittle {
+    text-align: center;
+    color: var(--text-clr__primary);
+  }
+  &__subtittle {
+    text-align: center;
+    color: var(--text-clr__primary);
+  }
+  &.--sizes {
+    // border: 1px solid var(--table-row-brdr-clr__primary);
+    // & .thead {}
+    // & .tbody {}
+    // & .row {}
+    & .col {
+      border: 1px solid var(--table-row-brdr-clr__primary);
+    }
+  }
+}
