@@ -1,6 +1,25 @@
 .input {
+  &__box {
+    width: 100%;
+    &:hover,
+    &:focus,
+    &:focus-visible,
+    &:focus-within {
+      & .input {
+        border-color: var(--brand_clr__1);
+        outline: 1px solid var(--brand_clr__1);
+        &__label {
+          color: var(--brand_clr__1);
+        }
+        &__textarea {
+          border-color: var(--brand_clr__1);
+          outline: 1px solid var(--brand_clr__1);
+        }
+      }
+    }
+  }
   &.--filter-founder {
-height: 30px;
+    height: 30px;
     width: 150px;
     border: 2px solid transparent;
 
@@ -13,35 +32,6 @@ height: 30px;
   }
 }
 .--prod-create {
-  & .input__box {
-    width: 100%;
-    &:hover,
-    &:focus,
-    &:focus-visible,
-    &:focus-within {
-      & .label {
-        color: var(--brand_clr__1);
-      }
-      & .input {
-        border-color: var(--brand_clr__1);
-        outline: 1px solid var(--brand_clr__1);
-      }
-      & .textarea {
-        border-color: var(--brand_clr__1);
-        outline: 1px solid var(--brand_clr__1);
-      }
-    }
-  }
-  & .label {
-    display: inline-block;
-
-    font-size: 12px;
-    line-height: 1.2;
-    letter-spacing: 0.05em;
-    padding-left: 8px;
-
-    transition: all var(--timing-function__main);
-  }
   & .input {
     display: block;
     width: 100%;
@@ -54,189 +44,199 @@ height: 30px;
     border: 1px solid var(--icon-clr__primary);
 
     transition: all var(--timing-function__main);
-  }
-  & .textarea {
-    display: block;
-    width: 100%;
-
-    padding: 8px;
-    margin-top: 4px;
-    resize: none;
-
-    border-radius: 4px;
-    border: 1px solid var(--icon-clr__primary);
-
-    transition: all var(--timing-function__main);
-
-    &.--desription {
-      height: 85px;
-    }
-    &.--ext-comment {
-      height: 50px;
-    }
-    &.--int-comment {
-      height: 50px;
-    }
-  }
-  & .input-foto {
-    &__box {
-      position: relative;
-      text-align: center;
-      // margin: 15px 0;
-      // width: 100%;
-
-      /*padding: 8px;*/
-      /*width: 100%;*/
-      &:hover,
-      &:focus,
-      &:focus-visible,
-      &:focus-within {
-        & .input-foto__label {
-          border-color: var(--brand_clr__1);
-        }
-        & .input-foto__add {
-          fill: var(--brand_clr__1);
-          border-color: var(--brand_clr__1);
-        }
-      }
-    }
     &__label {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-
-      min-width: 70px;
-
-      min-height: 70px;
-
-      cursor: pointer;
-
-      border-radius: 4px;
-      border: 2px solid var(--icon-clr__primary);
-      background-color: #fff;
-
-      transition: all var(--timing-function__main);
-    }
-    &__add {
       display: inline-block;
-      color: inherit;
-      vertical-align: middle;
-
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 0;
-      padding: 4px;
-
-      fill: var(--icon-clr__primary);
-
-      border-radius: 50%;
-      border: 2px solid var(--icon-clr__primary);
-
+  
+      font-size: 12px;
+      line-height: 1.2;
+      letter-spacing: 0.05em;
+      padding-left: 8px;
+  
       transition: all var(--timing-function__main);
     }
-    &__delete {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-    }
-    &__image {
-      width: 100%;
-    }
-  }
-  & .input {
-    &__table-type,
-    &__table-parameter {
-      display: block;
-      border-style: none;
+   
+    &__foto {
+      &-box {
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        border-radius: 4px;
 
-      border: 2px solid transparent;
-      &:hover,
-      &:focus,
-      &:focus-visible,
-      &:focus-within {
-        border-color: var(--brand_clr__1);
-        outline-style: none;
+        &:hover,
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+          & .input__foto-label {
+            border-color: var(--brand_clr__1);
+          }
+          & .input__foto-add {
+            fill: var(--brand_clr__1);
+            border-color: var(--brand_clr__1);
+          }
+        }
+      }
+      &-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        min-width: 70px;
+
+        min-height: 70px;
+
+        cursor: pointer;
+
+        border-radius: 4px;
+        border: 2px solid var(--icon-clr__primary);
+        background-color: #fff;
+
+        transition: all var(--timing-function__main);
+      }
+      &-add {
+        display: inline-block;
+        color: inherit;
+        vertical-align: middle;
+
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 0;
+        padding: 4px;
+
+        fill: var(--icon-clr__primary);
+
+        border-radius: 50%;
+        border: 2px solid var(--icon-clr__primary);
+
+        transition: all var(--timing-function__main);
+      }
+      &-delete {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+      }
+      &-image {
+        width: 100%;
       }
     }
-    &__table-type {
-      width: 60px;
+    &__textarea {
+      display: block;
+      width: 100%;
+  
+      padding: 8px;
+      margin-top: 4px;
+      resize: none;
+  
+      border-radius: 4px;
+      border: 1px solid var(--icon-clr__primary);
+  
+      transition: all var(--timing-function__main);
+  
+      &.--desription {
+        height: 85px;
+      }
+      &.--ext-comment {
+        height: 50px;
+      }
+      &.--int-comment {
+        height: 50px;
+      }
     }
+    &__table {
+      &-type,
+      &-parameter {
+        display: block;
+        border-style: none;
 
-    &__table-parameter {
-      width: 100px;
+        border: 2px solid transparent;
+        &:hover,
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+          border-color: var(--brand_clr__1);
+          outline-style: none;
+        }
+      }
+      &-type {
+        width: 60px;
+      }
+      &-parameter {
+        width: 100px;
+      }
     }
   }
   & .select {
-    &__table-type,
-    &__table-parameter {
-      display: block;
-      border-style: none;
+    &__table {
+      &-type,
+      &-parameter {
+        display: block;
+        border-style: none;
   
-      border: 2px solid transparent;
-      &:hover,
-      &:focus,
-      &:focus-visible,
-      &:focus-within {
-        border-color: var(--brand_clr__1);
-        outline-style: none;
+        border: 2px solid transparent;
+        &:hover,
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+          border-color: var(--brand_clr__1);
+          outline-style: none;
+        }
       }
-    }
-    &__table-type {
-      width: 60px;
-    }
-    &__table-parameter {
-      width: 100%;
+      &-type {
+        width: 60px;
+      }
+      &-parameter {
+        width: 100%;
+      }
     }
   }
 }
 .--prod-stock {
   & .input {
-    &__table-type,
-    &__table-atribute {
-      display: block;
-      border-style: none;
-
-      border: 2px solid transparent;
-      &:hover,
-      &:focus,
-      &:focus-visible,
-      &:focus-within {
-        border-color: var(--brand_clr__1);
-        outline-style: none;
+    &__table {
+      &-type {
+        width: 60px;
       }
-    }
-    &__table-type {
-      width: 60px;
-    }
-
-    &__table-atribute {
-      width: 100px;
+      &-atribute {
+        width: 100px;
+      }
+      &-type,
+      &-atribute {
+        display: block;
+        border-style: none;
+  
+        border: 2px solid transparent;
+        &:hover,
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+          border-color: var(--brand_clr__1);
+          outline-style: none;
+        }
+      }
     }
   }
   & .select {
-    &__table-type,
-    &__table-atribute {
-      display: block;
-      border-style: none;
-  
-      border: 2px solid transparent;
-      &:hover,
-      &:focus,
-      &:focus-visible,
-      &:focus-within {
-        border-color: var(--brand_clr__1);
-        outline-style: none;
+    &__table {
+      &-type {
+        width: 60px;
       }
-    }
-    &__table-type {
-      width: 60px;
-    }
-    &__table-atribute {
-      width: 100%;
+      &-atribute {
+        width: 100%;
+      }
+      &-type,
+      &-atribute {
+        display: block;
+        border-style: none;
+  
+        border: 2px solid transparent;
+        &:hover,
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+          border-color: var(--brand_clr__1);
+          outline-style: none;
+        }
+      }
     }
   }
 }
-
-
-

@@ -92,12 +92,13 @@
     background-color: var(--brand_clr__2);
   }
   & .content {
+    position: relative;
+
     display: flex;
     flex-direction: column;
-//     flex-basis: 350px;
-// flex-basis: 5;
+
     height: calc(100% - 31px);
-    // height: fit-content;
+
   }
   & .footer {
     display: block;
@@ -112,10 +113,10 @@
     background-color: var(--brand_clr__2);
   }
 
-  & .overflow {
+  &__overflow {
     overflow: auto;
     width: 100%;
     // width: 400px;
-    // height: 100%;
+    height: 100%;
   }
 }

@@ -1,12 +1,15 @@
 .button {
   display: block;
   border-style: none;
+
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-align: center;
+
   transition: var(--timing-function__main);
   &.--for_menu {
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.05em;
     color: var(--brand_clr__1);
 
     padding: 8px 16px;
@@ -19,17 +22,24 @@
     }
   }
   &.--decision {
-    padding: 8px 16px 6px;
+    padding: 4px 12px 2px;
     min-width: 100px;
-    text-align: center;
+
+    font-size: 14px;
     font-weight: 500;
+
+    background-color: var(--btn-deciscon_clr__primary);
 
     border-bottom: 4px solid transparent;
 
     transition: all var(--timing-function__main);
-    // &:hover,
-    // &:focus {}
-    // &:active {}
+    &:hover,
+    &:focus {
+      background-color: var(--btn-deciscon_clr__hover);
+    }
+    &:active {
+      background-color: var(--btn-deciscon_clr__active);
+    }
     &.--accept {
       &:hover,
       &:focus {
