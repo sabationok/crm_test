@@ -14,10 +14,11 @@
   --icon-clr__primary: #808080;
   /* BLOCKS */
   /* TABLES */
-  --table-row-clr__primary: #dadada7e;
+  --tr-cell-bckgrnd_clr__even: #dadada7e;
+  --tr-bckgrnd_clr__even: #dadada7e;
   --table-row-brdr-clr__primary: #c7c7c781;
-  --table-row-clr__hover: rgba(137, 202, 255, 0.5);
-  --td-bckrnd-clr__hover: rgba(137, 202, 255, 0.5);
+  --tr-bckrnd-clr__hover: rgba(137, 202, 255, 0.4);
+  --td-bckrnd-clr__active: rgba(137, 202, 255, 0.7);
   --td-outline-clr: rgba(137, 202, 255, 1);
   --th-font-size__primary: 12px;
   --th-font-size__secondary: 14px;
