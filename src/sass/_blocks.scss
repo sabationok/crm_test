@@ -72,17 +72,19 @@
       height: calc(100% - 43px);
     }
   }
-  &.--order-create {
-    flex-basis: 250px;
+  &.--order-info {
+    flex-basis: 450px;
     flex-grow: 3;
     min-height: 200px;
     max-height: 350px;
+    min-width: 250px;
   }
-  &.--order-stock {
-    flex-basis: 250px;
+  &.--order-ttn{
+    flex-basis: 350px;
     flex-grow: 2;
-    min-height: 200px;
+    min-height: 300px;
     max-height: 350px;
+    min-width: 250px;
   }
   /* блоки повернень */
   &.--returns {
@@ -93,17 +95,19 @@
       height: calc(100% - 43px);
     }
   }
-  &.--return-create {
-    flex-basis: 250px;
+  &.--return-info {
+    flex-basis: 450px;
     flex-grow: 3;
     min-height: 200px;
     max-height: 350px;
+    min-width: 250px;
   }
-  &.--return-stock {
-    flex-basis: 250px;
+  &.--return-inspect {
+    flex-basis: 370px;
     flex-grow: 2;
-    min-height: 200px;
+    min-height: 300px;
     max-height: 350px;
+    min-width: 250px;
   }
   /* товарні блоки*/
   &.--products {
@@ -118,7 +122,7 @@
     }
   }
   &.--product-create {
-    flex-basis: 350px;
+    flex-basis: 450px;
     flex-grow: 3;
     min-height: 200px;
     max-height: 350px;
@@ -127,7 +131,7 @@
   &.--product-stock {
     flex-basis: 350px;
     flex-grow: 2;
-    min-height: 200px;
+    min-height: 300px;
     max-height: 350px;
     min-width: 250px;
   }

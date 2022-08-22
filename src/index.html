@@ -9,20 +9,83 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&family=Raleway:wght@700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;800;700&family=Raleway:wght@700;800;900&family=Roboto:wght@400;800;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- стилі слайдера -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css.map"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <!-- стилі -->
     <link rel="stylesheet" href="./sass/index.scss" />
-    
   </head>
   <body>
     <include src="./partials/header.html"></include>
     Прошу скористатись меню навігації.
+
+    <section class="slick__hero">
+      <div class="slick__container">
+        <!-- ========== slick__box --1 -->
+        <div class="slick__box">
+          <div class="product-cards_slider">
+            <div class="brand-cards__container">
+              <div class="brand-cards__box">
+                Бренд 1
+                <div class="brand-card --1"><img src="https://picsum.photos/800?random=1" alt="" /></div>
+                <div class="brand-card --1"><img src="https://picsum.photos/800?random=2" alt="" /></div>
+                <div class="brand-card --1"><img src="https://picsum.photos/800?random=3" alt="" /></div>
+                <div class="brand-card --1"><img src="https://picsum.photos/800?random=4" alt="" /></div>
+                <div class="brand-card --1"><img src="https://picsum.photos/800?random=5" alt="" /></div>
+                <div class="brand-card --1"><img src="https://picsum.photos/800?random=6" alt="" /></div>
+              </div>
+            </div>
+            <div class="brand-cards__container">
+              <div class="brand-cards__box">
+                бренд 2
+                <div class="brand-card --2"><img src="https://picsum.photos/800?random=7" alt="" /></div>
+                <div class="brand-card --2"><img src="https://picsum.photos/800?random=8" alt="" /></div>
+                <div class="brand-card --2"><img src="https://picsum.photos/800?random=9" alt="" /></div>
+                <div class="brand-card --2"><img src="https://picsum.photos/800?random=10" alt="" /></div>
+                <div class="brand-card --2"><img src="https://picsum.photos/800?random=11" alt="" /></div>
+                <div class="brand-card --2"><img src="https://picsum.photos/800?random=12" alt="" /></div>
+              </div>
+            </div>
+            <div class="brand-cards__container">
+              <div class="brand-cards__box">
+                бренд 3
+                <div class="brand-card --3"><img src="https://picsum.photos/800?random=13" alt="" /></div>
+                <div class="brand-card --3"><img src="https://picsum.photos/800?random=14" alt="" /></div>
+                <div class="brand-card --3"><img src="https://picsum.photos/800?random=15" alt="" /></div>
+                <div class="brand-card --3"><img src="https://picsum.photos/800?random=16" alt="" /></div>
+                <div class="brand-card --3"><img src="https://picsum.photos/800?random=17" alt="" /></div>
+                <div class="brand-card --3"><img src="https://picsum.photos/800?random=18" alt="" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- <include src="./partials/block.html"></include> -->
     <section class="section --flex">
       <!-- <include src="./partials/block.html"></include> -->
       <!-- <include src="./partials/block.html"></include> -->
     </section>
     <!-- <include src="" ></include> -->
+
+    <!-- script jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <!-- script slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- script local -->
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
