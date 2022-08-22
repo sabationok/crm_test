@@ -36,6 +36,12 @@ body {
     display: flex;
   }
 }
+.container {
+&__market {
+  max-width: 480px;
+  margin: auto;
+}
+}
 
 /* ----------------- НОРМАЛІЗАЦІЯ -------------- */
 /*  ЗАГОЛОВКИ */

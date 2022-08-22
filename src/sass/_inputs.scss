@@ -46,15 +46,15 @@
     transition: all var(--timing-function__main);
     &__label {
       display: inline-block;
-  
+
       font-size: 12px;
       line-height: 1.2;
       letter-spacing: 0.05em;
       padding-left: 8px;
-  
+
       transition: all var(--timing-function__main);
     }
-   
+
     &__foto {
       &-box {
         position: relative;
@@ -122,16 +122,16 @@
     &__textarea {
       display: block;
       width: 100%;
-  
+
       padding: 8px;
       margin-top: 4px;
       resize: none;
-  
+
       border-radius: 4px;
       border: 1px solid var(--icon-clr__primary);
-  
+
       transition: all var(--timing-function__main);
-  
+
       &.--desription {
         height: 85px;
       }
@@ -171,7 +171,7 @@
       &-parameter {
         display: block;
         border-style: none;
-  
+
         border: 2px solid transparent;
         &:hover,
         &:focus,
@@ -203,7 +203,7 @@
       &-atribute {
         display: block;
         border-style: none;
-  
+
         border: 2px solid transparent;
         &:hover,
         &:focus,
@@ -227,7 +227,7 @@
       &-atribute {
         display: block;
         border-style: none;
-  
+
         border: 2px solid transparent;
         &:hover,
         &:focus,
@@ -238,5 +238,24 @@
         }
       }
     }
+  }
+}
+.product-card__input {
+  display: block;
+  width: 250px;
+  height: 30px;
+
+  padding: 0 8px;
+
+  border: 1px solid transparent;
+
+  transition: all var(--timing-function__main);
+
+  &:hover {
+    border-color: rgb(68, 142, 253);
+  }
+  &:focus-visible {
+    outline-style: none;
+    border-color: rgb(28, 119, 255);
   }
 }

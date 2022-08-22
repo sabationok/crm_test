@@ -6,7 +6,9 @@
   letter-spacing: 0.05em;
   text-align: center;
 
-  transition: var(--timing-function__main);
+  border: 1px solid transparent;
+
+  transition: all var(--timing-function__main);
   &.--for_menu {
     font-size: 20px;
     font-weight: 500;
@@ -57,6 +59,43 @@
       &:focus {
         border-color: rgb(255, 62, 62);
       }
+    }
+  }
+  &.--to-cart {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    color: #fff;
+
+    background-color: rgb(94, 158, 255);
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      background-color: rgb(68, 142, 253);
+    }
+    &:active {
+      background-color: #fff;
+      color: rgb(28, 119, 255);
+      border-color: rgb(28, 119, 255);
+    }
+  }
+
+  &.--send-feedback {
+    font-weight: 500;
+    padding: 4px 8px;
+
+    color: rgb(94, 158, 255);
+
+    background-color: #fff;
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      color: rgb(68, 142, 253);
+    }
+    &:active {
+      color: #fff;
+      background-color: rgb(28, 119, 255);
     }
   }
 }
