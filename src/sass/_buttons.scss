@@ -17,10 +17,21 @@
     padding: 8px 16px;
     background-color: var(--brand_clr__2);
 
-    &:hover,
+    &:hover {
+      background-color: var(--brand_clr__2-hover);
+    }
     &:focus,
     &:active {
-      background-color: var(--brand_clr__2-hover);
+      background-color: var(--brand_clr__2-active);
+    }
+    &:focus,
+    &:active {
+      & +.nav__list {
+        opacity: 1;
+        transform: scaleX(1);
+        visibility: visible;
+        pointer-events: all;
+      }
     }
   }
   &.--decision {

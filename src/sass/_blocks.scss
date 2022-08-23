@@ -65,8 +65,8 @@
   }
   /* блоки замовлення*/
   &.--orders {
-    flex-basis: 600px;
-    flex-grow: 5;
+    flex-basis: 900px;
+    flex-grow: 10;
     & .content {
       padding: 0 4px;
       height: calc(100% - 43px);
@@ -111,10 +111,11 @@
   }
   /* товарні блоки*/
   &.--products {
-    flex-basis: 600px;
-    flex-grow: 5;
-    // height: 200px;
-    height: 250px;
+    flex-basis: 900px;
+    flex-grow: 10;
+    min-height: 20px;
+    max-height: 250px;
+
     min-width: 250px;
     & .content {
       padding: 0 4px;
@@ -122,17 +123,18 @@
     }
   }
   &.--product-create {
-    flex-basis: 450px;
+    flex-basis: 570px;
     flex-grow: 3;
-    min-height: 200px;
-    max-height: 350px;
+    min-height: 250px;
+    max-height: 330px;
     min-width: 250px;
   }
   &.--product-stock {
     flex-basis: 350px;
     flex-grow: 2;
-    min-height: 300px;
-    max-height: 350px;
+    min-height: 250px;
+
+    max-height: 330px;
     min-width: 250px;
   }
   &.--order-create,

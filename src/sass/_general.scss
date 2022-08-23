@@ -23,6 +23,7 @@ body {
   outline: var(--testing-brdr-wght) solid var(--testing-brdr-clr);
 }
 .section {
+  
   margin-left: 8px;
   margin-right: 8px;
   margin-top: 8px;
@@ -31,6 +32,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+
   }
   &__main {
     display: flex;
