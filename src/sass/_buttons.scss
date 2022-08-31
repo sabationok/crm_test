@@ -23,9 +23,6 @@
     &:focus,
     &:active {
       background-color: var(--brand_clr__2-active);
-    }
-    &:focus,
-    &:active {
       & +.nav__list {
         opacity: 1;
         transform: scaleX(1);
@@ -91,7 +88,6 @@
       border-color: rgb(28, 119, 255);
     }
   }
-
   &.--send-feedback {
     font-weight: 500;
     padding: 4px 8px;

@@ -67,9 +67,12 @@
   &.--orders {
     flex-basis: 900px;
     flex-grow: 10;
+    & .header {
+      min-height: 30px;
+    }
     & .content {
       padding: 0 4px;
-      height: calc(100% - 43px);
+      height: calc(100% - 35px);
     }
   }
   &.--order-info {
@@ -90,9 +93,12 @@
   &.--returns {
     flex-basis: 600px;
     flex-grow: 5;
+    & .header {
+      min-height: 30px;
+    }
     & .content {
       padding: 0 4px;
-      height: calc(100% - 43px);
+      height: calc(100% - 35px);
     }
   }
   &.--return-info {
@@ -117,9 +123,12 @@
     max-height: 250px;
 
     min-width: 250px;
+    & .header {
+      min-height: 30px;
+    }
     & .content {
       padding: 0 4px;
-      height: calc(100% - 43px);
+      height: calc(100% - 35px);
     }
   }
   &.--product-create {
