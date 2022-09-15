@@ -26,7 +26,7 @@ let ordersArray = [
   },
   {
     date: '06.05.2021',
-    orderNum: 002225,
+    orderNum: '002225',
     ttnList: [456256123, 123454132],
     col4: '---',
     col5: '---',
