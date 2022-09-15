@@ -1,0 +1,342 @@
+<div class="form --prod-create">
+  <form class="zone --inputs">
+    <p class="zone__tittle">Характеристики продукту</p>
+    <!-- SKU -->
+    <div class="input__box" data-tittle="prod__sku">
+      <label class="input__label" for="prod__sku">SKU №</label>
+      <input
+        class="input"
+        type="text"
+        id="prod__sku"
+        value="v002-g2157-art2164651"
+        placeholder="SKU №"
+        required
+      />
+    </div>
+    <!-- Назва продукту -->
+    <div class="input__box" data-tittle="prod__name">
+      <label class="input__label" for="prod__name">Назва товару</label>
+      <input
+        class="input"
+        type="text"
+        id="prod__name"
+        value="Сукня рожева"
+        placeholder="Назва товару"
+        required
+      />
+    </div>
+    <!-- Ціна, UAH -->
+    <div class="input__box" data-tittle="prod__price-uah">
+      <label class="input__label" for="prod__price-uah">Ціна, UAH</label>
+      <input
+        class="input"
+        type="text"
+        id="prod__price-uah"
+        value="1980"
+        placeholder="Ціна, UAH"
+        required
+      />
+    </div>
+    <!-- Ціна, USD -->
+    <div class="input__box" data-tittle="prod__price-usd">
+      <label class="input__label" for="prod__price-usd">Ціна, USD</label>
+      <input
+        class="input"
+        type="text"
+        id="prod__price-usd"
+        value="50"
+        placeholder="Ціна, USD"
+      />
+    </div>
+    <!-- комісія -->
+    <div class="input__box" data-tittle="prod__commision">
+      <label class="input__label" for="prod__commision">Комісійна винагорода, %</label>
+      <input
+        class="input"
+        type="text"
+        id="prod__commision"
+        value="35"
+        placeholder="Комісійна винагорода, %"
+        required
+      />
+    </div>
+    <!-- знижка -->
+    <div class="input__box" data-tittle="prod__sale">
+      <label class="input__label" for="prod__sale">Знижка, %</label>
+      <input
+        class="input"
+        type="text"
+        id="prod__sale"
+        placeholder="Знижка, %"
+      />
+    </div>
+    <!-- бренд -->
+    <div class="input__box" data-tittle="prod__brand">
+      <label class="input__label" for="prod__brand">Бренд</label>
+      <input
+        class="input"
+        type="text"
+        id="prod__brand"
+        value="Stimma"
+        placeholder="Бренд"
+        required
+      />
+    </div>
+    <!-- секція -->
+    <div class="input__box" data-tittle="prod__section">
+      <label class="input__label" for="prod__section">Секція</label>
+      <input
+        class="input"
+        type="select"
+        id="prod__section"
+        placeholder="Секція"
+        required
+      />
+    </div>
+    <!-- категорія -->
+    <div class="input__box" data-tittle="prod__category">
+      <label class="input__label" for="prod__category">Категорія</label>
+      <input
+        class="input"
+        type="text"
+        id="prod__category"
+        placeholder="Категорія"
+        required
+      />
+    </div>
+    <!-- Наявність -->
+    <div class="input__box" data-tittle="prod__availability">
+      <label class="input__label" for="prod__availability">Наявність</label>
+      <input
+        class="input"
+        type="text"
+        id="prod__availability"
+        placeholder="Наявність"
+        required
+      />
+    </div>
+    <!-- Термін виготовлення -->
+    <div class="input__box" data-tittle="prod__termin-days">
+      <label class="input__label" for="prod__termin-days"
+        >Термін виготовлення, дні</label
+      >
+      <input
+        class="input"
+        type="text"
+        id="prod__termin-days"
+        placeholder="Термін виготовлення, дні"
+        required
+      />
+    </div>
+    <!-- додаткові характеристики -->
+    <div class="input__box" data-tittle="prod__addional">
+      <label class="input__label" for="prod__addional">Додаткові характеристики</label>
+      <input
+        class="input"
+        type="text"
+        id="prod__addional"
+        placeholder="Додаткові характеристики"
+      />
+    </div>
+
+    <!-- посилання -->
+    <div class="input__box" data-tittle="prod__youtube">
+      <label class="input__label" for="prod__youtube">Посилання YouTube</label>
+      <input
+        class="input"
+        type="text"
+        id="prod__youtube"
+        placeholder="Посилання YouTube"
+      />
+    </div>
+    <div class="input__box" data-tittle="prod__pinterest">
+      <label class="input__label" for="prod__pinterest">Посилання Pinterest</label>
+      <input
+        class="input"
+        type="text"
+        id="prod__pinterest"
+        placeholder="Посилання Pinterest"
+      />
+    </div>
+    <div class="input__box" data-tittle="prod__instagram">
+      <label class="input__label" for="prod__instagram">Посилання Instagram</label>
+      <input
+        class="input"
+        type="text"
+        id="prod__instagram"
+        placeholder="Посилання Instagram"
+      />
+    </div>
+
+    <!-- ОПИС -->
+    <div class="input__box" data-tittle="prod__desription">
+      <label class="input__label" for="prod__description">Опис товару</label>
+      <textarea
+        class="input__textarea --desription"
+        id="prod__description"
+        name=""
+        placeholder="Опис товару"
+      ></textarea>
+    </div>
+    <!-- зовнішній коментар -->
+    <div class="input__box" data-tittle="prod__ext-comment">
+      <label class="input__label" for="prod__ext-comment">Зовнішній коментар</label>
+      <textarea
+        class="input__textarea --ext-comment"
+        id="prod__ext-comment"
+        name=""
+        placeholder="Зовнішній коментар"
+      ></textarea>
+    </div>
+    <!-- внутрішній коментар -->
+    <div class="input__box" data-tittle="prod__int-comment">
+      <label class="input__label" for="prod__int-comment">Внутрішній коментар</label>
+      <textarea
+        class="input__textarea --int-comment"
+        id="prod__int-comment"
+        name=""
+        placeholder="Внутрішній коментар"
+      ></textarea>
+    </div>
+
+    <div class="zone --decision-btns">
+      <button class="button --decision --accept" type="submit">Прийняти</button>
+      <button class="button --decision --reset" type="reset">Скинути</button>
+      <button class="button --decision --decline" type="button">
+        Відхилити
+      </button>
+    </div>
+  </form>
+
+  <!-- ФОТО -->
+  <form class="zone --foto-upload">
+    <p class="zone__tittle">Фото продукту</p>
+    <div class="flex-box">
+      <div class="input__foto-box">
+        <input
+          name="file"
+          type="file"
+          name="file"
+          id="input__file"
+          class="visually-hidden"
+          multiple
+        />
+        <label for="input__file" class="input__foto-label">
+          <!-- <span class="input__file-icon-wrapper"></span> -->
+          <span class="input__foto-add">
+            <svg style="width: 12px; height: 12px">
+              <use href="./images/sprite_srm.svg#icon-plus"></use>
+            </svg>
+          </span>
+        </label>
+      </div>
+
+      <div class="input__foto-box">
+        <input
+          name="file"
+          type="file"
+          name="file"
+          id="input__file"
+          class="visually-hidden"
+          multiple
+        />
+        <label for="input__file" class="input__foto-label">
+          <!-- <span class="input__file-icon-wrapper"></span> -->
+          <span class="input__foto-add">
+            <svg style="width: 12px; height: 12px">
+              <use href="./images/sprite_srm.svg#icon-plus"></use>
+            </svg>
+          </span>
+        </label>
+      </div>
+
+      <div class="input__foto-box">
+        <input
+          name="file"
+          type="file"
+          name="file"
+          id="input__file"
+          class="visually-hidden"
+          multiple
+        />
+        <label for="input__file" class="input__foto-label">
+          <!-- <span class="input__file-icon-wrapper"></span> -->
+          <span class="input__foto-add">
+            <svg style="width: 12px; height: 12px">
+              <use href="./images/sprite_srm.svg#icon-plus"></use>
+            </svg>
+          </span>
+        </label>
+      </div>
+
+      <div class="input__foto-box">
+        <input
+          name="file"
+          type="file"
+          name="file"
+          id="input__file"
+          class="visually-hidden"
+          multiple
+        />
+        <label for="input__file" class="input__foto-label">
+          <!-- <span class="input__file-icon-wrapper"></span> -->
+          <span class="input__foto-add">
+            <svg style="width: 12px; height: 12px">
+              <use href="./images/sprite_srm.svg#icon-plus"></use>
+            </svg>
+          </span>
+        </label>
+      </div>
+
+      <div class="input__foto-box">
+        <input
+          name="file"
+          type="file"
+          name="file"
+          id="input__file"
+          class="visually-hidden"
+          multiple
+        />
+        <label for="input__file" class="input__foto-label">
+          <!-- <span class="input__file-icon-wrapper"></span> -->
+          <span class="input__foto-add">
+            <svg style="width: 12px; height: 12px">
+              <use href="./images/sprite_srm.svg#icon-plus"></use>
+            </svg>
+          </span>
+        </label>
+      </div>
+    </div>
+
+    <div class="zone --decision-btns">
+      <button class="button --decision --accept" type="submit">Прийняти</button>
+      <button class="button --decision --reset" type="reset">Скинути</button>
+      <button class="button --decision --decline" type="button">
+        Відхилити
+      </button>
+    </div>
+  </form>
+
+  <!-- ТАБЛИЦЯ ХАРАКТЕРИСТИК -->
+  <form class="zone --table">
+    <p class="zone__tittle">Розмірна сітка продукту</p>
+    <!-- <p class="table__subtittle">Елемент № 1</p> -->
+    <!-- <div class="zone__overflow"></div> -->
+    <include src="./partials/table_sizes.html"></include>
+
+    <div class="zone --decision-btns">
+      <button class="button --decision --accept" type="submit">Прийняти</button>
+      <button class="button --decision --reset" type="reset">Скинути</button>
+      <button class="button --decision --decline" type="button">
+        Відхилити
+      </button>
+    </div>
+  </form>
+
+  <!-- КНОПКИ ФОРМИ -->
+  <!-- <div class="zone --decision-btns">
+    <button class="button --decision --accept" type="submit">Прийняти</button>
+    <button class="button --decision --reset" type="reset">Скинути</button>
+    <button class="button --decision --decline" type="button">Відхилити</button>
+  </div> -->
+</div>
